@@ -1,0 +1,92 @@
+/* 
+Jonah Aney June 22nd, 2025 
+CSD-340 Module 6.3: bioSite Development
+CSS styles for the bioSite web page
+*/
+
+body {
+    background-color: #fff9c4;  /* Light yellow background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container: flexbox layout for left and right panels */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: flex-start;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Left panel: contains header and main image, aligns items to the start */
+.left-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Header styles: large, blue, fun font for the main title */
+header h1 {
+    color: #1976d2;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Main image: sets size, border, and spacing for the portrait */
+.main-image {
+    width: 500px;      
+    height: auto;      
+    border: 2px solid #bdbdbd;
+    display: block;
+    margin-bottom: 20px;
+    background-image: linear-gradient(135deg, #bdbdbd 1px, transparent 1px), 
+                      linear-gradient(45deg, #bdbdbd 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%;
+    position: relative;
+}
+
+/* Right panel: contains navigation, centers content vertically */
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 60px;
+}
+
+/* Navigation styles: buttons in a vertical stack */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+}
+
+/* Navigation button styles: large, rounded, blue border */
+.nav-btn {
+    display: block;
+    background-color: #b0bec5;
+    color: #1976d2;
+    text-align: center;
+    padding: 18px 0;
+    margin: 0;
+    border: 2px solid #1976d2;
+    border-radius: 6px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-btn:hover, .nav-btn:focus {
+    background-color: #1976d2;
+    color: #fff;
+}
