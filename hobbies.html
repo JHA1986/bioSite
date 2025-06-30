@@ -1,6 +1,6 @@
 <!--
-Jonah Aney June 22nd, 2025 
-CSD-340 Module 6.3: bioSite Development
+Jonah Aney June 29th, 2025 
+CSD-340 Module 7.2, continuing from 6.3: bioSite Development
 Hobbies Page
 -->
 
@@ -15,11 +15,11 @@ Hobbies Page
 <body>
     <header>
         <h1>Holly's Hobbies</h1>
-        <nav>
+        <nav class="nav-horizontal">
 <!-- Navigation links to other pages of the site -->
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="hobbies.html">Hobbies</a>
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="about.html" class="nav-btn">About</a>
+            <a href="hobbies.html" class="nav-btn">Hobbies</a>
         </nav>
     </header>
 <!-- Main content section with a list of hobbies -->
@@ -27,14 +27,54 @@ Hobbies Page
         <h2>Summer Fun!</h2>
         <div>
             <h3>Hobby List</h3>
-<!-- Unordered list of Holly's hobbies -->
-            <ul>
-                <li>Draw with chalk</li>
-                <li>Playing My Singing Monsters</li>
-                <li>Swimming!</li>
+<!-- Unordered list of Holly's hobbies, each with an image and description -->
+            <ul class="hobby-list">
+                <li>
+                    <img src="images/IMG_1199.jpeg" alt="Ice Cream on the Last Day of School" class="hobby-img">
+                <div>
+                        <strong>Ice Cream on the Last Day of School!</strong>
+                        <p>Perfect time to celebrate with a frozen treat and friends!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/IMG_1070.jpeg" alt="Holly drawing with chalk" class="hobby-img">
+                    <div>
+                        <strong>Fun with chalk!</strong>
+                        <p>Holly loves creating colorful masterpieces on the driveway during sunny days.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/IMG_1367.jpeg" alt="Cotton Candy" class="hobby-img">
+                    <div>
+                        <strong>Carnival Snacks!</strong>
+                        <p>She can never say no to some tasty cotton candy!.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/IMG_1462.jpeg" alt="Swimming" class="hobby-img">
+                    <div>
+                        <strong>Swimming!</strong>
+                        <p>Nothing beats splashing around in the pool or splash pad on a hot summer day!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/IMG_4146.jpeg" alt="Visiting the Zoo" class="hobby-img">
+                    <div>
+                        <strong>Going to the Zoo!</strong>
+                        <p>Holly loves visiting all of the interesting animals and insects!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/IMG_1360.jpeg" alt="Baseball Game" class="hobby-img">
+                    <div>
+                        <strong>Baseball!</strong>
+                        <p>Summer is officially here when we go to the ball park and watch Mom sing the National Anthem!</p>
+                    </div>
+                </li>
             </ul>
         </div>
     </main>
+
 <!-- Footer section with copyright -->
     <footer>
         <p>&copy; 2025 Jonah Aney</p>
