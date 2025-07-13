@@ -1,12 +1,12 @@
 /* 
-Jonah Aney June 29th, 2025 
-CSD-340 Module 7.2, continuing from 6.3: bioSite Development
+Jonah Aney July 13th, 2025 
+CSD-340 Module 10.2, continuing from  7.2 and 6.3: bioSite Development
 CSS styles for the bioSite web page
 */
 
 body {
-    background-color: #fff9c4;  /* Light yellow background */
-    margin: 0;
+    background-color: #fff9c4; /* Light yellow background */
+    margin: 40px; /* Added page margins based on peer feedback */
     font-family: Arial, sans-serif;
 }
 
@@ -57,7 +57,7 @@ header h1 {
 
 /* Main image: sets size, border, and spacing for the portrait */
 .main-image {
-    width: 500px;      
+    width: 600px; /* Increased size */
     height: auto;      
     border: 2px solid #bdbdbd;
     display: block;
@@ -131,8 +131,8 @@ nav {
 }
 
 .bio-images img {
-    width: 120px;
-    height: 120px;
+    width: 160px; /* Increased size */
+    height: 160px;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #bdbdbd;
@@ -164,8 +164,8 @@ nav {
 
 /* Hobby photos: flex layout for hobby images */
 .hobby-photos img {
-    width: 120px;
-    height: 120px;
+    width: 160px; /* Increased size */
+    height: 160px;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #bdbdbd;
@@ -187,7 +187,7 @@ nav {
 
 /* Hobby images: size and style */
 .hobby-img {
-    width: 100px; 
+    width: 140px; /* Increased size */
     height: auto;
     margin-right: 16px;
     border-radius: 8px; /* Rounded corners */
@@ -202,9 +202,9 @@ footer {
     font-family: Arial, sans-serif;
     font-size: 1.1em;
     position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    width: calc(100% - 80px); /* 80px for 40px margin on each side */
+    bottom: 40px; /* Added for bottom margin based on peer feedback */
+    left: 40px; /* Added for left margin based on peer feedback */
     z-index: 100;
 }
 
